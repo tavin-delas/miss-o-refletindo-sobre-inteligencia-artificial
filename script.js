@@ -105,6 +105,7 @@ function respostaSelecionada(opcaoSelecionada){
 
 mostraPergunta();
 
+
     
         
 
