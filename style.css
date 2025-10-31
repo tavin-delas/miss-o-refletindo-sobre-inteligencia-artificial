@@ -13,17 +13,17 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    font-family: Arial, sans-serif; /* Adicionado para melhor visualização */
+    font-family: Arial, sans-serif; 
 }
 
 .caixa-principal{
     background-color: var(--cor-principal);
     width: 90%;
-    max-width: 600px; /* Adicionado para limitar o tamanho em telas maiores */
+    max-width: 600px;
     text-align: center;
     padding: 30px;
-    border-radius: 10px; /* Borda arredondada */
-    box-shadow: 0 0 20px rgba(43, 222, 253, 0.2); /* Sombra para destaque */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(43, 222, 253, 0.2);
 }
 
 h1{
@@ -49,7 +49,7 @@ h1{
 
 /* Estilo para a tag img adicionada via JS */
 .imagem-pergunta {
-    max-width: 100%;
+    max-width: 100%; 
     height: auto;
     border-radius: 8px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
