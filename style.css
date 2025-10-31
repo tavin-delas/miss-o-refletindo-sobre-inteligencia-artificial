@@ -13,15 +13,83 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    font-family: Arial, sans-serif; /* Adicionado para melhor visualização */
 }
 
 .caixa-principal{
     background-color: var(--cor-principal);
     width: 90%;
+    max-width: 600px; /* Adicionado para limitar o tamanho em telas maiores */
     text-align: center;
-    padding: 20px;
+    padding: 30px;
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0 0 20px rgba(43, 222, 253, 0.2); /* Sombra para destaque */
 }
 
 h1{
     color: var(--cor-destaque);
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+/* Estilo para a caixa das perguntas */
+.caixa-perguntas {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: var(--cor-secundaria);
+    border-radius: 5px;
+}
+
+/* Estilo para a caixa da imagem */
+.caixa-imagem {
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Estilo para a tag img adicionada via JS */
+.imagem-pergunta {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo para a caixa das alternativas (botões) */
+.caixa-alternativas {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Estilo para os botões de alternativa */
+.caixa-alternativas button {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    padding: 12px;
+    border: 1px solid var(--cor-destaque);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    font-size: 1em;
+}
+
+.caixa-alternativas button:hover {
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
+    transform: translateY(-2px);
+}
+
+/* Estilo para a caixa do resultado final */
+.caixa-resultado {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: var(--cor-secundaria);
+    border-radius: 5px;
+    text-align: left;
+}
+
+.texto-resultado {
+    line-height: 1.6;
 }
